@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Origin</title>
+    <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="style.css" />
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +17,7 @@
   </head>
   <body>
     <header id="header">
-      <nav class="container show">
+      <nav class="container ">
         <a class="logo" href="#">beaty<span>salon</span>.</a>
         <div class="menu">
           <ul class="grid">
@@ -27,8 +28,8 @@
             <li><a class="title" href="#contact">Contato</a></li>
           </ul>
         </div>
-        <div class="open">...</div>
-        <div class="close">x</div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
     <main>
@@ -52,12 +53,50 @@
       </section>
       <div class="divider-1"></div>
       <section class="section" id="about">
-        <div class="container grid">Sobre</div>
+        <div class="container grid">
+          <div class="image">
+          <img
+            src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="3 mulheres sorrindo"
+          />
+        </div>
+        <div class="text">
+          <h2 class="">Sobre nós</h1>
+          <p>
+            Um salão exclusivo em São Paulo, especializado em tratamentos
+            naturais.
+          </p>
+          <a class="button" href="#">Agendar um horário</a>
+        </div>
+      </div>
       </section>
-
+      <div class="divider-2"></div>
       <section class="section" id="services">
-        <div class="container grid">Serviços</div>
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>texto de <strong></strong>ção do serviço</p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-woman-hair"></i> 
+              <h3 class="title">Terapia capilar</h3>
+              <p></p>
+            </div>
+            <div class="card">
+              <i class="icon-trim"></i>
+              <h3 class="title">Cortes</h3>
+              <p></p>
+            </div>
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <h3 class="title">Tratamentos</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
