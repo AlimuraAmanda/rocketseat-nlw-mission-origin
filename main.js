@@ -16,16 +16,16 @@ for (const link of links) {
 }
 
 //mudar a sombra do header quando der scroll na página
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
+function changeHeaderWhenScroll() {
+  const header = document.querySelector('#header')
+  const navHeight = header.offsetHeight
 
-window.addEventListener('scroll', function () {
   if (window.scrollY >= navHeight) {
     header.classList.add('scroll')
   } else {
     header.classList.remove('scroll')
   }
-})
+}
 
 // container dos slides
 const swiper = new Swiper('.swiper-container', {
@@ -52,6 +52,22 @@ scrollReveal.reveal(
   #services header, #services .cards,
   #testimonials header, #testimonials .testimonials,
   #contact .text, #contact .links
-`,
+  footer .brand, footer .social
+  `,
   { interval: 100 }
 )
+//botão voltar para o topo
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+
+  if (window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+//quando aciona o scroll
+
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll(), backToTop()
+})
