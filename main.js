@@ -15,7 +15,7 @@ for (const link of links) {
   })
 }
 
-/*mudar a sombra do header quando der scroll na página */
+//mudar a sombra do header quando der scroll na página //
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
 
@@ -25,4 +25,14 @@ window.addEventListener('scroll', function () {
   } else {
     header.classList.remove('scroll')
   }
+})
+
+// container dos slides
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1, //um slide por view
+  pagination: {
+    el: '.swiper-pagination' //elemento que recebe
+  },
+  mousewheel: true, //passa com o scrol do mouse
+  keyboard: true // passa pelas setas do teclado
 })
