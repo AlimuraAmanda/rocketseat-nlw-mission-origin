@@ -50,12 +50,13 @@ body {
 .button:hover {
   background: var(--base-color-alt);
 }
+
 .divider-1 {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var (--hue), 36%, 57%, 1),
-    hsla(var (--hue), 65%, 88%, 0.34)
+    hsla(var(--hue), 36%, 57%, 1),
+    hsla(var(--hue), 65%, 88%, 0.34)
   );
 }
 
@@ -63,8 +64,8 @@ body {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var (--hue), 65%, 88%, 0.34),
-    hsla(var (--hue), 36%, 57%, 1)
+    hsla(var(--hue), 65%, 88%, 0.34),
+    hsla(var(--hue), 36%, 57%, 1)
   );
 }
 
@@ -403,4 +404,32 @@ nav.show div.icon-close {
 
 .swiper-pagination-bullet-active {
   background: var(--base-color);
+}
+
+/*===========contact=============*/
+
+#contact .grid {
+  gap: 4rem;
+}
+
+#contact .text p {
+  margin-bottom: 2rem;
+}
+
+#contact .button i,
+#contact ul li i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+#contact ul.grid {
+  gap: 2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li i {
+  color: var(--base-color);
 }

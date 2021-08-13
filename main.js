@@ -15,7 +15,7 @@ for (const link of links) {
   })
 }
 
-//mudar a sombra do header quando der scroll na página //
+//mudar a sombra do header quando der scroll na página
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
 
@@ -36,3 +36,22 @@ const swiper = new Swiper('.swiper-container', {
   mousewheel: true, //passa com o scrol do mouse
   keyboard: true // passa pelas setas do teclado
 })
+
+// ScrollReveal: Mostra elementos quando der scroll na página
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `
+  #home .image, #home .text, 
+  #about .image, #about .text, 
+  #services header, #services .cards,
+  #testimonials header, #testimonials .testimonials,
+  #contact .text, #contact .links
+`,
+  { interval: 100 }
+)
