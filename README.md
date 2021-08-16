@@ -20,3 +20,5 @@ Utilitários
 
 - [randomuser.me](https://randomuser.me/photos)
 - [IconMoon](https://icomoon.io/app/#/select)
+
+Reprodução do apredizado obtido no NLW Together - Origin da Rocketseat.
